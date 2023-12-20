@@ -1,3 +1,7 @@
+package hotelPractice;
+
+import hotelPractice.Room.RoomType;
+
 import java.util.List;
 import java.util.Scanner;
 
@@ -124,7 +128,7 @@ public class Admin implements RoomEditable {
 //		타입 공백 검사
 		do {
 			System.out.println("[타입]");
-			for (Room.RoomType type : Room.RoomType.values()) {
+			for (RoomType type : RoomType.values()) {
 				System.out.println(type);
 			}
 			System.out.print("[룸 타입을 입력하세요]: ");
@@ -134,7 +138,7 @@ public class Admin implements RoomEditable {
 				System.out.println("[잘못된 입력입니다.]");
 			}
 		} while (!(tmp.length() > 0));
-		room.setType(Room.RoomType.valueOf(tmp));
+		room.setType(RoomType.valueOf(tmp));
 
 //		룸 번호 공백 검사
 		do {
@@ -200,13 +204,13 @@ public class Admin implements RoomEditable {
 
 	@Override
 	public void init(List<Room> roomList) {
-		roomList.add(new Room(Room.RoomType.SINGLE, 101, "싱글룸", 150000, 2, 3, 30000));
-		roomList.add(new Room(Room.RoomType.SINGLE, 102, "싱글룸", 150000, 2, 3, 30000));
-		roomList.add(new Room(Room.RoomType.SINGLE, 103, "싱글룸", 150000, 2, 3, 30000));
-		roomList.add(new Room(Room.RoomType.TWIN, 104, "트윈룸", 200000, 2, 3, 30000));
-		roomList.add(new Room(Room.RoomType.DOUBLE, 105, "더블룸", 250000, 2, 4, 30000));
-		roomList.add(new Room(Room.RoomType.SUITE, 106, "스위트룸", 400000, 2, 4, 50000));
-		roomList.add(new Room(Room.RoomType.STUDIO, 107, "스튜디오룸", 550000, 5, 7, 50000));
+		roomList.add(new Room(RoomType.SINGLE, 101, "싱글룸", 150000, 2, 3, 30000));
+		roomList.add(new Room(RoomType.SINGLE, 102, "싱글룸", 150000, 2, 3, 30000));
+		roomList.add(new Room(RoomType.SINGLE, 103, "싱글룸", 150000, 2, 3, 30000));
+		roomList.add(new Room(RoomType.TWIN, 104, "트윈룸", 200000, 2, 3, 30000));
+		roomList.add(new Room(RoomType.DOUBLE, 105, "더블룸", 250000, 2, 4, 30000));
+		roomList.add(new Room(RoomType.SUITE, 106, "스위트룸", 400000, 2, 4, 50000));
+		roomList.add(new Room(RoomType.STUDIO, 107, "스튜디오룸", 550000, 5, 7, 50000));
 	}
 
 

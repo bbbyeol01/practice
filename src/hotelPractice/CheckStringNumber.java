@@ -1,3 +1,5 @@
+package hotelPractice;
+
 public class CheckStringNumber {
 	
 	public static boolean isNum(String s) {

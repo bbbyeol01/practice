@@ -1,3 +1,7 @@
+package hotelPractice;
+
+import hotelPractice.Room.RoomType;
+
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
@@ -216,7 +220,7 @@ public class User implements ReserveInfoEditable {
 		System.out.println();
 		System.out.println("==========================");
 		int i = 1;
-		for (Room.RoomType type : Room.RoomType.values()) {
+		for (RoomType type : RoomType.values()) {
 			System.out.printf("      %8s\n", type.getValue());
 			i++;
 		}

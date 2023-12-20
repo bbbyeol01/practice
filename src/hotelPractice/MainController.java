@@ -1,3 +1,5 @@
+package hotelPractice;
+
 public interface MainController {
 
 	void printAdminMenu();

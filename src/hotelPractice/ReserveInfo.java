@@ -1,3 +1,5 @@
+package hotelPractice;
+
 public class ReserveInfo {
 	static int count = 0;
 	private int code = ++count;

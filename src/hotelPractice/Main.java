@@ -1,3 +1,5 @@
+package hotelPractice;
+
 import java.util.Scanner;
 
 public class Main {
@@ -167,7 +169,7 @@ public class Main {
 							if (roomSel < 0) {
 								System.out.println("[잘못된 입력입니다.]");
 							}
-							
+
 						} while (roomSel < 0);
 
 

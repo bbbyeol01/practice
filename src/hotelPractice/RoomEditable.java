@@ -1,3 +1,5 @@
+package hotelPractice;
+
 import java.util.List;
 
 public interface RoomEditable {

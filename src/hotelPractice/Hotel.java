@@ -1,3 +1,7 @@
+package hotelPractice;
+
+import hotelPractice.Room.RoomType;
+
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
@@ -18,13 +22,13 @@ public class Hotel implements HotelEditable {
 	Hotel() {
 //		기본 세팅
 //		주석 처리 후 admin(888) -> 11(초기화) 진행 시 동일 목록으로 초기화
-		roomList.add(new Room(Room.RoomType.SINGLE, 101, "싱글룸", 150000, 2, 3, 30000));
-		roomList.add(new Room(Room.RoomType.SINGLE, 102, "싱글룸", 150000, 2, 3, 30000));
-		roomList.add(new Room(Room.RoomType.SINGLE, 103, "싱글룸", 150000, 2, 3, 30000));
-		roomList.add(new Room(Room.RoomType.TWIN, 104, "트윈룸", 200000, 2, 3, 30000));
-		roomList.add(new Room(Room.RoomType.DOUBLE, 105, "더블룸", 250000, 2, 4, 30000));
-		roomList.add(new Room(Room.RoomType.SUITE, 106, "스위트룸", 400000, 2, 4, 50000));
-		roomList.add(new Room(Room.RoomType.STUDIO, 107, "스튜디오룸", 550000, 5, 7, 50000));
+		roomList.add(new Room(RoomType.SINGLE, 101, "싱글룸", 150000, 2, 3, 30000));
+		roomList.add(new Room(RoomType.SINGLE, 102, "싱글룸", 150000, 2, 3, 30000));
+		roomList.add(new Room(RoomType.SINGLE, 103, "싱글룸", 150000, 2, 3, 30000));
+		roomList.add(new Room(RoomType.TWIN, 104, "트윈룸", 200000, 2, 3, 30000));
+		roomList.add(new Room(RoomType.DOUBLE, 105, "더블룸", 250000, 2, 4, 30000));
+		roomList.add(new Room(RoomType.SUITE, 106, "스위트룸", 400000, 2, 4, 50000));
+		roomList.add(new Room(RoomType.STUDIO, 107, "스튜디오룸", 550000, 5, 7, 50000));
 	}
 
 	Hotel(String name, Grade grade) {

@@ -1,3 +1,5 @@
+package hotelPractice;
+
 // RoomBean, RoomVO/RoomDTO/RoomEntity
 public class Room {
 	private static int count = 0;
