@@ -37,12 +37,11 @@ public class Main {
 					selectedType = user.typeSelect();
 					hotel.printRoom(selectedType);
 					roomSel = user.roomSelect(hotel.roomList, selectedType);
-				} while (roomSel < 0);
 
-				if (roomSel < 0) {
-					System.out.println("[잘못된 입력입니다.]");
-					break;
-				}
+					if (roomSel < 0) {
+						System.out.println("[잘못된 입력입니다.]");
+					}
+				} while (roomSel < 0);
 
 				if (hotel.roomList.get(roomSel).isReserved()) {
 					System.out.println("[이미 예약된 방입니다.]");
@@ -164,12 +163,14 @@ public class Main {
 							selectedType = user.typeSelect();
 							hotel.printRoom(selectedType);
 							roomSel = user.roomSelect(hotel.roomList, selectedType);
+
+							if (roomSel < 0) {
+								System.out.println("[잘못된 입력입니다.]");
+							}
+							
 						} while (roomSel < 0);
 
-						if (roomSel < 0) {
-							System.out.println("[잘못된 입력입니다.]");
-							break;
-						}
+
 
 //						수정(해당 인덱스에 새 정보 덮어씌움)
 						if (hotel.roomList.get(roomSel).isReserved()) {

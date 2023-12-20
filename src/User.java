@@ -180,18 +180,18 @@ public class User implements ReserveInfoEditable {
 
 		System.out.println();
 		System.out.println("==========================");
-		for (int i = 0; i < roomList.size(); i++) {
-			if (roomList.get(i).getName().contains(tmp)) {
-				if (roomList.get(i).isReserved()) {
-					status = "●예약됨●";
-				} else {
-					status = "○예약가능○";
-				}
-				System.out.println(
-						"   " + roomList.get(i).getRoomNumber() + "호  " + roomList.get(i).getName() + "   " + status);
-				cnt++;
-			}
-		}
+        for (Room room : roomList) {
+            if (room.getName().contains(tmp)) {
+                if (room.isReserved()) {
+                    status = "●예약됨●";
+                } else {
+                    status = "○예약가능○";
+                }
+                System.out.println(
+                        "   " + room.getRoomNumber() + "호  " + room.getName() + "   " + status);
+                cnt++;
+            }
+        }
 		System.out.println("==========================");
 
 		if (cnt == 0) {

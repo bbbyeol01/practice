@@ -56,7 +56,7 @@ public class Hotel implements HotelEditable {
 		for (int i = 0; i < roomList.size(); i++) {
 
 			String roomCheckStatus = "";
-			if (roomList.get(i).isReserved() == false) {
+			if (!roomList.get(i).isReserved()) {
 				roomCheckStatus = "○예약가능○";
 			} else {
 				roomCheckStatus = "●예약됨●";
@@ -73,7 +73,7 @@ public class Hotel implements HotelEditable {
 
 	@Override
 	public void reserveStatus(List<ReserveInfo> reserveList) {
-		if (reserveList.size() == 0) {
+		if (reserveList.isEmpty()) {
 			System.out.println();
 			System.out.println("[등록된 내역이 없습니다.]");
 			System.out.println("[확인(Enter)]");

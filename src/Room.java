@@ -1,7 +1,7 @@
 // RoomBean, RoomVO/RoomDTO/RoomEntity
 public class Room {
 	private static int count = 0;
-	private int number;
+	private final int number;
 	private String name;
 	private boolean status = false;
 	private int price;
