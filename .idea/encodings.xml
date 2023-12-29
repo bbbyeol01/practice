@@ -8,5 +8,14 @@
     <file url="file://$PROJECT_DIR$/src/goods/GoodsMenu.java" charset="EUC-KR" />
     <file url="file://$PROJECT_DIR$/src/goods/GoodsService.java" charset="EUC-KR" />
     <file url="file://$PROJECT_DIR$/src/goods/JDBCTemplate.java" charset="EUC-KR" />
+    <file url="file://$PROJECT_DIR$/src/goods2/GoodsBean.java" charset="EUC-KR" />
+    <file url="file://$PROJECT_DIR$/src/goods2/GoodsControl.java" charset="EUC-KR" />
+    <file url="file://$PROJECT_DIR$/src/goods2/GoodsDAO.java" charset="EUC-KR" />
+    <file url="file://$PROJECT_DIR$/src/goods2/GoodsDAOImpl.java" charset="EUC-KR" />
+    <file url="file://$PROJECT_DIR$/src/goods2/GoodsMenu.java" charset="EUC-KR" />
+    <file url="file://$PROJECT_DIR$/src/goods2/GoodsService.java" charset="EUC-KR" />
+    <file url="file://$PROJECT_DIR$/src/goods2/GoodsServiceImpl.java" charset="EUC-KR" />
+    <file url="file://$PROJECT_DIR$/src/goods2/JDBCTemplate.java" charset="EUC-KR" />
+    <file url="PROJECT" charset="UTF-8" />
   </component>
 </project>
